@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SB Consultants — Your Trusted Visa Partner | Worldwide Work & Study Visas</title>
+<link rel="icon" href="assets/images/logo.jpg" type="image/jpeg">
+<meta name="description" content="SB Consultants — Your Trusted Visa Partner. Professional work visa, study visa, job placement, and immigration consultancy in Islamabad, Pakistan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary:           #1B3A5C; /* App Seed: Navy Blue */
+    --primary-light:     #2A5C8F; /* Lighter Navy */
+    --primary-dark:      #0F2338; /* Midnight Navy */
+    --primary-container: #EDF3F9; /* Surface Container */
+    --secondary:         #D97706; /* Warm Gold / Amber */
+    --accent:            #D97706; /* Accent Amber */
+    --accent-dark:       #B45309; /* Deep Amber */
+    --accent-light:      #FBBF24; /* Bright Gold */
+    --success:           #15803D; /* App Emerald Success */
+    --bg:                #F7F9FF; /* App Scaffold Background */
+    --white:             #FFFFFF;
+    --text-main:         #1A202C; /* High-contrast text */
+    --text-muted:        #4A5568; /* Subtitle text */
+    --border:            #E2E8F0; /* Soft card border */
+    --card:              #FFFFFF; /* White elevated card */
+    --shadow-sm:         0 2px 6px rgba(27,58,92,.06);
+    --shadow-md:         0 8px 24px rgba(27,58,92,.09);
+    --shadow-lg:         0 16px 44px rgba(27,58,92,.15);
+    --radius:            16px;
+    --radius-sm:         10px;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Poppins', sans-serif; color: var(--text-main); background: var(--bg); line-height: 1.65; }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(15,35,56,.96); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 6%; height: 72px;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+  }
+  .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+  .nav-logo-img {
+    width: 42px; height: 42px; border-radius: 10px; object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,.3); border: 1.5px solid rgba(255,255,255,.18);
+  }
+  .nav-brand-group { display: flex; flex-direction: column; }
+  .nav-logo-text { font-size: 17px; font-weight: 700; color: var(--white); letter-spacing: .3px; line-height: 1.2; }
+  .nav-logo-sub { font-size: 10px; font-weight: 500; color: rgba(255,255,255,.65); letter-spacing: .5px; }
+  .nav-links { display: flex; align-items: center; gap: 26px; }
+  .nav-links a { color: rgba(255,255,255,.82); text-decoration: none; font-size: 14px; font-weight: 500; transition: color .2s; }
+  .nav-links a:hover { color: var(--accent-light); }
+  .nav-cta {
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    color: var(--white) !important;
+    padding: 10px 22px; border-radius: 10px; font-weight: 600 !important;
+    font-size: 13.5px !important; transition: transform .2s, box-shadow .2s !important;
+    box-shadow: 0 4px 14px rgba(217,119,6,.35);
+  }
+  .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(217,119,6,.45); }
+  .hamburger { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; }
+  .hamburger span { width: 24px; height: 2px; background: white; display: block; border-radius: 2px; transition: .3s; }
+  .mobile-menu { display: none; position: fixed; top: 72px; left: 0; right: 0; background: var(--primary-dark); padding: 20px 6%; z-index: 99; flex-direction: column; gap: 16px; border-bottom: 1px solid rgba(255,255,255,.1); }
+  .mobile-menu a { color: rgba(255,255,255,.88); text-decoration: none; font-size: 15px; font-weight: 500; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,.08); }
+  .mobile-menu.open { display: flex; }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh; padding-top: 72px;
+    background: linear-gradient(145deg, var(--primary-dark) 0%, var(--primary) 58%, #15406C 100%);
+    display: flex; align-items: center; position: relative; overflow: hidden;
+  }
+  .hero-bg-shapes { position: absolute; inset: 0; pointer-events: none; }
+  .hero-bg-shapes::before {
+    content: ''; position: absolute; width: 560px; height: 560px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(217,119,6,.14) 0%, transparent 70%);
+    top: -120px; right: -80px;
+  }
+  .hero-bg-shapes::after {
+    content: ''; position: absolute; width: 420px; height: 420px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(42,92,143,.32) 0%, transparent 70%);
+    bottom: 20px; left: 2%;
+  }
+  .hero-inner {
+    max-width: 1180px; margin: 0 auto; padding: 75px 6%;
+    display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 50px; align-items: center; position: relative; z-index: 1;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(217,119,6,.16); border: 1px solid rgba(217,119,6,.42);
+    color: var(--accent-light); font-size: 11.5px; font-weight: 700; letter-spacing: 1px;
+    padding: 6px 14px; border-radius: 50px; text-transform: uppercase; margin-bottom: 20px;
+  }
+  .hero-badge::before { content: '✦'; font-size: 10px; color: var(--accent); }
+  .hero-title { font-size: clamp(32px, 4.2vw, 50px); font-weight: 800; color: var(--white); line-height: 1.18; margin-bottom: 18px; }
+  .hero-title span { color: var(--accent-light); }
+  .hero-subtitle { font-size: 16px; color: rgba(255,255,255,.78); margin-bottom: 34px; line-height: 1.75; max-width: 580px; }
+  .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn-primary {
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    color: var(--white); padding: 14px 28px;
+    border-radius: 12px; font-weight: 700; font-size: 15px; text-decoration: none;
+    display: inline-flex; align-items: center; gap: 8px; transition: all .25s;
+    box-shadow: 0 4px 18px rgba(217,119,6,.38);
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(217,119,6,.48); }
+  .btn-outline {
+    border: 1.5px solid rgba(255,255,255,.32); color: var(--white);
+    padding: 13px 26px; border-radius: 12px; font-weight: 600; font-size: 15px;
+    text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: all .25s;
+    background: rgba(255,255,255,.05); backdrop-filter: blur(4px);
+  }
+  .btn-outline:hover { border-color: var(--accent-light); color: var(--accent-light); background: rgba(251,191,36,.08); }
+  .hero-stats { display: flex; gap: 32px; margin-top: 42px; flex-wrap: wrap; }
+  .hero-stat-num { font-size: 26px; font-weight: 800; color: var(--white); line-height: 1.1; }
+  .hero-stat-num span { color: var(--accent-light); }
+  .hero-stat-label { font-size: 12px; color: rgba(255,255,255,.62); margin-top: 3px; font-weight: 500; }
+
+  /* Hero Phone Mockup */
+  .hero-visual { display: flex; justify-content: center; align-items: center; position: relative; }
+  .phone-wrap {
+    width: 275px; background: #0A1726; border-radius: 42px;
+    padding: 12px; box-shadow: 0 25px 65px rgba(0,0,0,.6), inset 0 0 0 1.5px rgba(255,255,255,.14);
+    position: relative; transition: transform .3s ease;
+  }
+  .phone-wrap:hover { transform: translateY(-6px); }
+  .phone-notch {
+    width: 86px; height: 18px; background: #000; border-radius: 0 0 14px 14px;
+    margin: 0 auto; display: flex; align-items: center; justify-content: center;
+    position: absolute; top: 12px; left: 50%; transform: translateX(-50%); z-index: 10;
+  }
+  .phone-notch::after { content: ''; width: 8px; height: 8px; background: #1c2b3d; border-radius: 50%; }
+  .phone-screen {
+    background: #F7F9FF; border-radius: 32px; overflow: hidden; position: relative;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.08);
+  }
+  .phone-screen img {
+    width: 100%; height: auto; display: block;
+  }
+  .phone-float-card {
+    position: absolute; bottom: 24px; right: -24px;
+    background: rgba(15,35,56,.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,.16);
+    border-radius: 14px; padding: 10px 14px;
+    display: flex; align-items: center; gap: 10px;
+    box-shadow: 0 12px 30px rgba(0,0,0,.45);
+    z-index: 15; color: white;
+    animation: floatAnim 4s ease-in-out infinite;
+  }
+  @keyframes floatAnim {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+  .phone-float-icon {
+    width: 32px; height: 32px; border-radius: 8px; background: rgba(22,163,74,.2);
+    border: 1px solid rgba(22,163,74,.4); display: flex; align-items: center; justify-content: center;
+    color: #4ADE80; font-size: 14px; font-weight: 800;
+  }
+  .phone-float-title { font-size: 11px; font-weight: 700; color: white; }
+  .phone-float-sub { font-size: 9.5px; color: rgba(255,255,255,.65); }
+
+  /* ── SECTIONS COMMON ── */
+  section { padding: 90px 6%; }
+  .container { max-width: 1180px; margin: 0 auto; }
+  .section-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+  .section-title { font-size: clamp(26px, 3.5vw, 40px); font-weight: 800; color: var(--primary); line-height: 1.22; margin-bottom: 14px; }
+  .section-subtitle { font-size: 16px; color: var(--text-muted); max-width: 580px; line-height: 1.7; }
+  .section-header-center { text-align: center; }
+  .section-header-center .section-subtitle { margin: 0 auto; }
+  .divider { width: 48px; height: 4px; background: var(--accent); border-radius: 2px; margin: 14px 0 28px; }
+  .divider-center { margin: 14px auto 36px; }
+
+  /* ── SERVICES / VISA CATEGORIES ── */
+  #services { background: var(--white); }
+  .services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; margin-top: 48px; }
+  .service-card {
+    background: var(--bg); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 26px 22px;
+    transition: all .25s ease; cursor: default; position: relative; overflow: hidden;
+    display: flex; flex-direction: column;
+  }
+  .service-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3.5px;
+    background: var(--card-color, var(--primary));
+    opacity: 0; transition: opacity .25s;
+  }
+  .service-card:hover {
+    box-shadow: var(--shadow-md); transform: translateY(-4px);
+    background: var(--white); border-color: rgba(27,58,92,.18);
+  }
+  .service-card:hover::before { opacity: 1; }
+  .service-icon-box {
+    width: 62px; height: 62px; border-radius: 16px;
+    background: var(--icon-bg, var(--primary-container));
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 18px; padding: 10px;
+    box-shadow: 0 4px 12px rgba(27,58,92,.06);
+    border: 1px solid rgba(27,58,92,.08);
+  }
+  .service-icon-box img {
+    width: 100%; height: 100%; object-fit: contain;
+  }
+  .service-title { font-size: 17px; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
+  .service-desc { font-size: 13.5px; color: var(--text-muted); line-height: 1.6; flex-grow: 1; }
+  .service-countries { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+  .country-tag {
+    font-size: 11px; font-weight: 600; color: var(--primary);
+    background: rgba(27,58,92,.07); padding: 3px 10px; border-radius: 50px;
+    border: 1px solid rgba(27,58,92,.12);
+  }
+
+  /* ── HOW IT WORKS ── */
+  #how-it-works { background: var(--primary-dark); position: relative; overflow: hidden; }
+  #how-it-works::before {
+    content: ''; position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='30' cy='30' r='1' fill='rgba(255,255,255,0.04)'/%3E%3C/svg%3E") repeat;
+  }
+  #how-it-works .section-title { color: var(--white); }
+  #how-it-works .section-subtitle { color: rgba(255,255,255,.68); }
+  #how-it-works .section-eyebrow { color: var(--accent-light); }
+  .steps-timeline {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px; margin-top: 48px; position: relative; z-index: 1;
+  }
+  .step-item {
+    background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08);
+    border-radius: var(--radius); padding: 24px 18px; text-align: center;
+    position: relative; transition: all .25s ease;
+  }
+  .step-item:hover {
+    background: rgba(255,255,255,.07); border-color: rgba(245,158,11,.3);
+    transform: translateY(-3px);
+  }
+  .step-num {
+    width: 48px; height: 48px; border-radius: 50%; margin: 0 auto 16px;
+    background: var(--step-color, var(--accent));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; font-weight: 800; color: var(--white);
+    box-shadow: 0 0 0 5px rgba(255,255,255,.06);
+  }
+  .step-title { font-size: 15px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+  .step-desc { font-size: 12.5px; color: rgba(255,255,255,.62); line-height: 1.6; }
+
+  /* ── WHY US ── */
+  #why-us { background: var(--bg); }
+  .why-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 50px; align-items: center; margin-top: 48px; }
+  .why-features { display: flex; flex-direction: column; gap: 20px; }
+  .why-feature { display: flex; gap: 16px; align-items: flex-start; }
+  .why-feature-icon {
+    width: 46px; height: 46px; border-radius: 12px; flex-shrink: 0;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: white; display: flex; align-items: center; justify-content: center; font-size: 20px;
+    box-shadow: 0 4px 12px rgba(27,58,92,.18);
+  }
+  .why-feature-text h4 { font-size: 16px; font-weight: 700; color: var(--primary); margin-bottom: 4px; }
+  .why-feature-text p { font-size: 13.5px; color: var(--text-muted); line-height: 1.6; }
+  .why-highlight {
+    background: linear-gradient(135deg, var(--primary), #112942);
+    border-radius: 20px; padding: 40px 36px; color: white; position: relative; overflow: hidden;
+    box-shadow: var(--shadow-lg); border: 1px solid rgba(255,255,255,.08);
+  }
+  .why-highlight::after {
+    content: '100%'; position: absolute; right: -15px; bottom: -25px;
+    font-size: 130px; font-weight: 900; color: rgba(255,255,255,.04); line-height: 1; pointer-events: none;
+  }
+  .why-highlight h3 { font-size: 22px; font-weight: 800; margin-bottom: 12px; }
+  .why-highlight p { font-size: 14px; opacity: .82; line-height: 1.7; margin-bottom: 24px; }
+  .refund-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(22,163,74,.2); border: 1px solid rgba(22,163,74,.4);
+    color: #4ADE80; padding: 10px 18px; border-radius: 10px;
+    font-size: 13px; font-weight: 700;
+  }
+  .refund-badge::before { content: '✓'; font-weight: 900; }
+
+  /* ── TESTIMONIALS ── */
+  #testimonials { background: var(--white); }
+  .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 48px; }
+  .testimonial-card {
+    background: var(--bg); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 28px 24px; transition: all .25s ease;
+  }
+  .testimonial-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+  .testi-stars { color: var(--accent); font-size: 15px; margin-bottom: 14px; letter-spacing: 2px; }
+  .testi-text { font-size: 14px; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px; font-style: italic; }
+  .testi-author { display: flex; align-items: center; gap: 12px; }
+  .testi-avatar {
+    width: 42px; height: 42px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-size: 14px; font-weight: 700; flex-shrink: 0;
+  }
+  .testi-name { font-size: 14.5px; font-weight: 700; color: var(--primary); }
+  .testi-visa { font-size: 12px; color: var(--text-muted); }
+
+  /* ── APP DOWNLOAD ── */
+  #download {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+    text-align: center; position: relative; overflow: hidden;
+  }
+  #download::before {
+    content: ''; position: absolute; width: 600px; height: 600px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(217,119,6,.12) 0%, transparent 65%);
+    top: -200px; left: 50%; transform: translateX(-50%);
+  }
+  #download .section-title { color: var(--white); }
+  #download .section-subtitle { color: rgba(255,255,255,.7); margin: 0 auto 36px; max-width: 600px; }
+  .download-btns { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; position: relative; z-index: 1; }
+  .store-btn {
+    display: flex; align-items: center; gap: 12px;
+    background: rgba(255,255,255,.08); border: 1.5px solid rgba(255,255,255,.2);
+    color: white; padding: 13px 26px; border-radius: 14px; text-decoration: none;
+    transition: all .25s; min-width: 180px; backdrop-filter: blur(4px);
+  }
+  .store-btn:hover { background: rgba(255,255,255,.16); border-color: var(--accent-light); transform: translateY(-2px); }
+  .store-btn-icon { width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 24px; }
+  .store-btn-text { text-align: left; }
+  .store-btn-sub { font-size: 10px; opacity: .75; text-transform: uppercase; letter-spacing: .5px; }
+  .store-btn-name { font-size: 15px; font-weight: 700; line-height: 1.2; }
+
+  /* ── CONTACT ── */
+  #contact { background: var(--bg); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 48px; }
+  .contact-info { display: flex; flex-direction: column; gap: 20px; }
+  .contact-item { display: flex; gap: 16px; align-items: flex-start; }
+  .contact-icon {
+    width: 48px; height: 48px; border-radius: 12px; flex-shrink: 0;
+    background: var(--primary); color: white; display: flex; align-items: center;
+    justify-content: center; font-size: 20px; box-shadow: 0 4px 12px rgba(27,58,92,.18);
+  }
+  .contact-label { font-size: 11px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: .7px; margin-bottom: 3px; }
+  .contact-value { font-size: 15px; font-weight: 600; color: var(--primary); }
+  .contact-value a { color: inherit; text-decoration: none; }
+  .contact-note { font-size: 12px; color: var(--text-muted); margin-top: 3px; }
+  .whatsapp-btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: #25D366; color: white; padding: 14px 28px;
+    border-radius: 12px; font-weight: 700; font-size: 15px;
+    text-decoration: none; transition: all .25s; margin-top: 8px;
+    box-shadow: 0 4px 16px rgba(37,211,102,.3); width: fit-content;
+  }
+  .whatsapp-btn:hover { background: #1ebe59; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(37,211,102,.4); }
+  .contact-form {
+    background: var(--white); border-radius: var(--radius);
+    padding: 32px; border: 1px solid var(--border); box-shadow: var(--shadow-sm);
+  }
+  .contact-form h3 { font-size: 18px; font-weight: 700; color: var(--primary); margin-bottom: 22px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .form-group { display: flex; flex-direction: column; gap: 7px; margin-bottom: 14px; }
+  .form-label { font-size: 13px; font-weight: 600; color: var(--text-main); }
+  .form-input {
+    padding: 12px 14px; border: 1.5px solid var(--border); border-radius: var(--radius-sm);
+    font-family: 'Poppins', sans-serif; font-size: 14px; color: var(--text-main);
+    background: #F8FAFC; transition: all .2s; outline: none;
+  }
+  .form-input:focus { border-color: var(--primary); background: white; box-shadow: 0 0 0 3px rgba(27,58,92,.1); }
+  .form-input::placeholder { color: #94A3B8; }
+  textarea.form-input { resize: vertical; min-height: 100px; }
+  .form-submit {
+    width: 100%; padding: 14px; background: var(--primary);
+    color: white; border: none; border-radius: var(--radius-sm);
+    font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 700;
+    cursor: pointer; transition: all .2s; box-shadow: 0 4px 14px rgba(27,58,92,.25);
+  }
+  .form-submit:hover { background: var(--primary-light); transform: translateY(-1px); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--primary-dark); color: rgba(255,255,255,.65);
+    padding: 56px 6% 28px; border-top: 1px solid rgba(255,255,255,.08);
+  }
+  .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+  .footer-brand p { font-size: 13.5px; line-height: 1.7; margin-top: 14px; max-width: 280px; }
+  .footer-col h4 { font-size: 13px; font-weight: 700; color: var(--white); letter-spacing: .6px; text-transform: uppercase; margin-bottom: 16px; }
+  .footer-col a { display: block; font-size: 13.5px; color: rgba(255,255,255,.62); text-decoration: none; margin-bottom: 9px; transition: color .2s; }
+  .footer-col a:hover { color: var(--accent-light); }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .footer-bottom p { font-size: 13px; }
+  .footer-bottom a { color: var(--accent-light); text-decoration: none; }
+  .footer-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(22,163,74,.18); border: 1px solid rgba(22,163,74,.35);
+    color: #4ADE80; font-size: 12px; font-weight: 600; padding: 6px 14px; border-radius: 50px;
+  }
+  .footer-badge::before { content: '🛡'; }
+
+  /* ── PRIVACY POLICY HIDDEN PAGE ── */
+  #privacy-policy, #refund-policy, #shipping-policy, #terms-conditions {
+    display: none; min-height: 100vh; background: var(--bg);
+    padding-top: 72px;
+  }
+  #privacy-policy.active, #refund-policy.active, #shipping-policy.active, #terms-conditions.active { display: block; }
+  .policy-note { background: rgba(217,119,6,.1); border-left: 4px solid var(--accent); padding: 14px 18px; border-radius: var(--radius-sm); font-size: 14px; color: var(--text-main); margin-bottom: 36px; }
+  .policy-body { max-width: 800px; margin: 0 auto; padding: 56px 6%; }
+  .policy-header { margin-bottom: 40px; }
+  .policy-header h1 { font-size: 36px; font-weight: 800; color: var(--primary); margin-bottom: 10px; }
+  .policy-header p { font-size: 14px; color: var(--text-muted); }
+  .policy-section { margin-bottom: 36px; }
+  .policy-section h2 { font-size: 18px; font-weight: 700; color: var(--primary); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid var(--border); }
+  .policy-section p, .policy-section li { font-size: 14.5px; color: var(--text-muted); line-height: 1.8; margin-bottom: 10px; }
+  .policy-section ul { padding-left: 20px; }
+  .policy-section li { margin-bottom: 6px; }
+  .policy-back { margin-bottom: 20px; }
+  .policy-back a { color: var(--primary); text-decoration: none; font-weight: 600; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; }
+
+  /* ── AFFILIATE PROGRAM PAGE ── */
+  #affiliate-program {
+    display: none; min-height: 100vh; background: var(--bg);
+    padding-top: 72px;
+  }
+  #affiliate-program.active { display: block; }
+  .affiliate-body { max-width: 760px; margin: 0 auto; padding: 56px 6% 80px; }
+  .affiliate-header { margin-bottom: 32px; }
+  .affiliate-header h1 { font-size: 32px; font-weight: 800; color: var(--primary); margin-bottom: 10px; }
+  .affiliate-header p { font-size: 14.5px; color: var(--text-muted); line-height: 1.7; }
+  .affiliate-card {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 30px 28px; margin-bottom: 24px; box-shadow: var(--shadow-sm);
+  }
+  .affiliate-card h3 { font-size: 17px; font-weight: 700; color: var(--primary); margin-bottom: 16px; }
+  .terms-box {
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-sm);
+    padding: 18px 20px; max-height: 340px; overflow-y: auto; margin-bottom: 18px;
+  }
+  .terms-box ol { padding-left: 20px; }
+  .terms-box li { font-size: 13.5px; color: var(--text-main); line-height: 1.75; margin-bottom: 10px; }
+  .terms-checkbox-row {
+    display: flex; align-items: flex-start; gap: 10px; padding: 4px 2px 2px;
+  }
+  .terms-checkbox-row input[type="checkbox"] { width: 19px; height: 19px; margin-top: 2px; flex-shrink: 0; accent-color: var(--primary); cursor: pointer; }
+  .terms-checkbox-row label { font-size: 13.5px; color: var(--text-main); line-height: 1.6; cursor: pointer; }
+  .affiliate-step { display: none; }
+  .affiliate-step.active { display: block; }
+  .affiliate-fee-note {
+    display: inline-block; margin-top: 4px; font-size: 12.5px; font-weight: 700;
+    color: var(--primary); background: var(--primary-container); padding: 4px 12px; border-radius: 50px;
+  }
+  .platform-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 6px; }
+  .platform-chip { display: flex; align-items: center; gap: 8px; font-size: 13.5px; color: var(--text-main); background: var(--bg); border: 1.5px solid var(--border); border-radius: var(--radius-sm); padding: 9px 12px; cursor: pointer; }
+  .platform-chip input { accent-color: var(--primary); cursor: pointer; }
+  .platform-link-fields { display: flex; flex-direction: column; gap: 12px; margin-top: 14px; }
+  .platform-link-fields .form-group { margin-bottom: 0; }
+  .affiliate-submit-msg { font-size: 13.5px; margin-top: 12px; font-weight: 600; }
+  .affiliate-submit-msg.success { color: var(--success); }
+  .affiliate-submit-msg.error { color: #DC2626; }
+  .affiliate-submit-msg.info { color: var(--text-muted); }
+  .status-badge { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700; padding: 6px 14px; border-radius: 50px; }
+  .status-badge.pending { background: rgba(245,158,11,.15); color: var(--accent-dark); border: 1px solid rgba(245,158,11,.35); }
+  .status-badge.approved { background: rgba(16,185,129,.15); color: #059669; border: 1px solid rgba(16,185,129,.35); }
+  .status-badge.rejected { background: rgba(220,38,38,.1); color: #DC2626; border: 1px solid rgba(220,38,38,.3); }
+  .promo-code-display {
+    font-size: 22px; font-weight: 800; letter-spacing: 1px; color: var(--primary);
+    background: var(--bg); border: 2px dashed var(--primary-light); border-radius: var(--radius-sm);
+    padding: 14px; text-align: center; margin: 14px 0;
+  }
+  .referral-stat { display: flex; gap: 24px; margin-top: 16px; flex-wrap: wrap; }
+  .referral-stat-box { background: var(--bg); border-radius: var(--radius-sm); padding: 14px 22px; text-align: center; flex: 1; min-width: 140px; }
+  .referral-stat-num { font-size: 24px; font-weight: 800; color: var(--primary); }
+  .referral-stat-label { font-size: 11.5px; color: var(--text-muted); text-transform: uppercase; letter-spacing: .5px; margin-top: 4px; }
+  .affiliate-back { margin-bottom: 20px; }
+  .affiliate-back a { color: var(--primary); text-decoration: none; font-weight: 600; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; }
+
+  /* ── MAIN CONTENT TOGGLE ── */
+  #main-content.hidden { display: none; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    .hero-inner { grid-template-columns: 1fr; text-align: center; }
+    .hero-subtitle { margin: 0 auto 36px; }
+    .hero-btns { justify-content: center; }
+    .hero-stats { justify-content: center; }
+    .hero-visual { display: none; }
+    .why-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+    .steps-timeline { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 600px) {
+    nav { padding: 0 5%; }
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    section { padding: 60px 5%; }
+    .form-row { grid-template-columns: 1fr; }
+    .steps-timeline { grid-template-columns: 1fr; }
+    .footer-top { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#hero" onclick="showHome()">
+    <img class="nav-logo-img" src="assets/images/logo.jpg" alt="SB Consultants">
+    <div class="nav-brand-group">
+      <span class="nav-logo-text">SB Consultants</span>
+      <span class="nav-logo-sub">Your Trusted Visa Partner</span>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="#services" onclick="showHome()">Services</a>
+    <a href="#how-it-works" onclick="showHome()">How It Works</a>
+    <a href="#why-us" onclick="showHome()">Why Us</a>
+    <a href="#testimonials" onclick="showHome()">Reviews</a>
+    <a href="#contact" onclick="showHome()">Contact</a>
+    <a href="#" onclick="showAffiliate(event)">Affiliate Program</a>
+    <a href="#download" class="nav-cta">Download App</a>
+  </div>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="showHome();toggleMenu()">Services</a>
+  <a href="#how-it-works" onclick="showHome();toggleMenu()">How It Works</a>
+  <a href="#why-us" onclick="showHome();toggleMenu()">Why Us</a>
+  <a href="#testimonials" onclick="showHome();toggleMenu()">Reviews</a>
+  <a href="#contact" onclick="showHome();toggleMenu()">Contact</a>
+  <a href="#" onclick="showAffiliate(event);toggleMenu()">Affiliate Program</a>
+  <a href="#" onclick="showPrivacy(event);toggleMenu()">Privacy Policy</a>
+  <a href="#" onclick="showPolicy(event,'terms-conditions');toggleMenu()">Terms &amp; Conditions</a>
+  <a href="#" onclick="showPolicy(event,'refund-policy');toggleMenu()">Refund Policy</a>
+  <a href="#" onclick="showPolicy(event,'shipping-policy');toggleMenu()">Shipping &amp; Delivery Policy</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="main-content">
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-shapes"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">Islamabad, Pakistan — Verified Visa Experts</div>
+        <h1 class="hero-title">
+          One App.<br>
+          <span>Every Step of Your Journey Abroad.</span>
+        </h1>
+        <p class="hero-subtitle">
+          From visa consultancy and verified sponsors to jobs and scholarships for Study, Work, Business, Visit &amp; Golden Visa — plus flight and hotel booking, everything you need for your journey abroad is right here in one app.
+        </p>
+        <div class="hero-btns">
+          <a href="https://wa.me/923155440606" class="btn-primary" target="_blank">
+            💬 WhatsApp Us
+          </a>
+          <a href="#services" class="btn-outline">Explore Categories ↓</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">10,000<span>+</span></div>
+            <div class="hero-stat-label">App Downloads</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">50<span>+</span></div>
+            <div class="hero-stat-label">Countries Worldwide</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">100<span>%</span></div>
+            <div class="hero-stat-label">Verified &amp; Transparent Process</div>
+          </div>
+        </div>
+      </div>
+      <!-- Hero Phone Mockup -->
+      <div class="hero-visual">
+        <div class="phone-wrap">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <img src="assets/images/app_mockup_top.png" alt="SB Consultants Mobile App">
+          </div>
+          <div class="phone-float-card">
+            <div class="phone-float-icon">✓</div>
+            <div>
+              <div class="phone-float-title">SB Consultants App</div>
+              <div class="phone-float-sub">Live Milestone &amp; Status Tracking</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES / VISA CATEGORIES -->
+  <section id="services">
+    <div class="container">
+      <div>
+        <div class="section-eyebrow">Visa Categories</div>
+        <h2 class="section-title">Comprehensive Global Visa Services</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Explore authentic visa and international placement opportunities tailored to your career, qualifications, and global aspirations.</p>
+      </div>
+      <div class="services-grid">
+        <!-- 1. Work Visa -->
+        <div class="service-card" style="--card-color:#2E7D32;">
+          <div class="service-icon-box" style="--icon-bg:#E8F5E9;">
+            <img src="assets/images/work_visa_transparent.png" alt="Work Visa">
+          </div>
+          <div class="service-title">Work Visa</div>
+          <div class="service-desc">Verified employer job placement and skilled worker visa guidance across Europe, Gulf region, UK, and worldwide destinations.</div>
+          <div class="service-countries">
+            <span class="country-tag">Germany</span><span class="country-tag">Poland</span><span class="country-tag">Romania</span><span class="country-tag">UAE</span><span class="country-tag">UK</span>
+          </div>
+        </div>
+
+        <!-- 2. Study Visa -->
+        <div class="service-card" style="--card-color:#1B3A5C;">
+          <div class="service-icon-box" style="--icon-bg:#EDF3F9;">
+            <img src="assets/images/study_visa_transparent.png" alt="Study Visa">
+          </div>
+          <div class="service-title">Study Visa</div>
+          <div class="service-desc">University admissions, offer letters, and student visa processing for top global institutions with high visa grant rates.</div>
+          <div class="service-countries">
+            <span class="country-tag">UK</span><span class="country-tag">Australia</span><span class="country-tag">Germany</span><span class="country-tag">Italy</span><span class="country-tag">Malaysia</span>
+          </div>
+        </div>
+
+        <!-- 3. Visit Visa -->
+        <div class="service-card" style="--card-color:#0288D1;">
+          <div class="service-icon-box" style="--icon-bg:#E1F5FE;">
+            <img src="assets/images/visit_visa_transparent.png" alt="Visit Visa">
+          </div>
+          <div class="service-title">Visit / Tourist Visa</div>
+          <div class="service-desc">Fast-track tourist &amp; family visit visa documentation, bank statement assessment, travel itinerary, and embassy appointment scheduling.</div>
+          <div class="service-countries">
+            <span class="country-tag">Schengen</span><span class="country-tag">Turkey</span><span class="country-tag">Dubai</span><span class="country-tag">Thailand</span><span class="country-tag">Azerbaijan</span>
+          </div>
+        </div>
+
+        <!-- 4. Business Visa -->
+        <div class="service-card" style="--card-color:#6A1B9A;">
+          <div class="service-icon-box" style="--icon-bg:#F3E5F5;">
+            <img src="assets/images/business_visa_transparent.png" alt="Business Visa">
+          </div>
+          <div class="service-title">Business &amp; Investor Visa</div>
+          <div class="service-desc">Commercial expansion, entrepreneur visas, international corporate registration, and foreign trade investor permits.</div>
+          <div class="service-countries">
+            <span class="country-tag">UK Innovator</span><span class="country-tag">Canada Start-Up</span><span class="country-tag">UAE Freezone</span>
+          </div>
+        </div>
+
+        <!-- 5. Golden Visa -->
+        <div class="service-card" style="--card-color:#C98A1D;">
+          <div class="service-icon-box" style="--icon-bg:#FFF8E1;">
+            <img src="assets/images/golden_visa_transparent.png" alt="Golden Visa">
+          </div>
+          <div class="service-title">Golden Visa &amp; Residency</div>
+          <div class="service-desc">Long-term residency by investment, real estate acquisition, executive leadership, and exceptional talent pathways.</div>
+          <div class="service-countries">
+            <span class="country-tag">UAE 10-Yr</span><span class="country-tag">Portugal</span><span class="country-tag">Spain</span><span class="country-tag">Greece</span>
+          </div>
+        </div>
+
+        <!-- 6. Sponsored Jobs -->
+        <div class="service-card" style="--card-color:#ED6C02;">
+          <div class="service-icon-box" style="--icon-bg:#FFF3E0;">
+            <img src="assets/images/sponsored_jobs_transparent.png" alt="Sponsored Jobs">
+          </div>
+          <div class="service-title">Sponsored Jobs Placement</div>
+          <div class="service-desc">Direct employer sponsorship matching with pre-approved recruiting partners for construction, hospitality, IT, and healthcare.</div>
+          <div class="service-countries">
+            <span class="country-tag">Croatia</span><span class="country-tag">Romania</span><span class="country-tag">Malta</span><span class="country-tag">Saudi Arabia</span>
+          </div>
+        </div>
+
+        <!-- 7. Scholarships -->
+        <div class="service-card" style="--card-color:#00897B;">
+          <div class="service-icon-box" style="--icon-bg:#E0F2F1;">
+            <img src="assets/images/scholarships_transparent.png" alt="Scholarships">
+          </div>
+          <div class="service-title">International Scholarships</div>
+          <div class="service-desc">Fully-funded &amp; partial scholarships, monthly stipend guidance, research proposal assistance, and tuition fee waiver processing.</div>
+          <div class="service-countries">
+            <span class="country-tag">Erasmus+</span><span class="country-tag">DAAD Germany</span><span class="country-tag">Turkiye Burslari</span><span class="country-tag">Stipendium</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works">
+    <div class="container">
+      <div class="section-header-center">
+        <div class="section-eyebrow">The Process</div>
+        <h2 class="section-title">How Your Visa Journey Works</h2>
+        <div class="divider divider-center"></div>
+        <p class="section-subtitle">A transparent 5-step milestone procedure directly synced with your live mobile app dashboard.</p>
+      </div>
+      <div class="steps-timeline">
+        <div class="step-item">
+          <div class="step-num" style="--step-color:#1B5299;">1</div>
+          <div class="step-title">Profile Review</div>
+          <div class="step-desc">Submit your academic &amp; professional background for comprehensive profile evaluation and eligibility assessment.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="--step-color:#D97706;">2</div>
+          <div class="step-title">Consultant Call</div>
+          <div class="step-desc">Direct one-on-one consultation call with our visa expert to evaluate your case strategy, destination options, and requirements.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="--step-color:#7C3AED;">3</div>
+          <div class="step-title">Ready Case</div>
+          <div class="step-desc">Complete compilation, document attestation, legal statements, and meticulous preparation of your finalized case file.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="--step-color:#0D9488;">4</div>
+          <div class="step-title">Embassy Submission</div>
+          <div class="step-desc">Official file lodgment, visa fee submission, biometric appointment scheduling, and mock interview coaching sessions.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="--step-color:#15803D;">5</div>
+          <div class="step-title">Feedback &amp; Rating</div>
+          <div class="step-desc">Application outcome verification, post-submission guidance, pre-departure assistance, and your valued service rating.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section id="why-us">
+    <div class="container">
+      <div class="section-eyebrow">Why SB Consultants</div>
+      <h2 class="section-title">We Find the Opportunity. You Get the Visa.</h2>
+      <div class="divider"></div>
+      <div class="why-grid">
+        <div class="why-features">
+          <div class="why-feature">
+            <div class="why-feature-icon">📱</div>
+            <div class="why-feature-text">
+              <h4>Live Mobile App Tracking</h4>
+              <p>Track your entire application progress in real-time from our mobile app on Android with step-by-step milestone updates.</p>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="why-feature-icon">📞</div>
+            <div class="why-feature-text">
+              <h4>Mon–Sat Dedicated Support</h4>
+              <p>Direct assistance via phone and WhatsApp, available Monday to Saturday, 1:00 PM – 10:00 PM.</p>
+            </div>
+          </div>
+        </div>
+        <div class="why-highlight">
+          <h3>100% Money-Back Guarantee</h3>
+          <p>If you withdraw your application within 24 hours of submission, you receive a 100% full refund of your registration fee.</p>
+          <div class="refund-badge">100% Refund Within 24 Hours</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-header-center">
+        <div class="section-eyebrow">Client Reviews</div>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <div class="divider divider-center"></div>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"The process was extremely smooth. Got my visa within 20 days! The team guided me at every step and tracking on the app made everything so easy."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">AS</div>
+            <div>
+              <div class="testi-name">Affan Saleem</div>
+              <div class="testi-visa">Germany Work Visa ✈️</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Highly professional services. They guided me step-by-step for my Canada application. Everything was completely transparent and straightforward."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">MK</div>
+            <div>
+              <div class="testi-name">Muhammad Khan</div>
+              <div class="testi-visa">Canada Work Visa ✈️</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Very transparent and professional throughout profile evaluation, document preparation, and embassy submission. The clear milestone tracking and 24-hour refund guarantee gave me complete confidence."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">AR</div>
+            <div>
+              <div class="testi-name">Aisha Rahman</div>
+              <div class="testi-visa">UK Skilled Worker Visa ✈️</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APP DOWNLOAD -->
+  <section id="download">
+    <div class="container" style="position:relative;z-index:1">
+      <div class="section-eyebrow" style="color:var(--accent-light)">Mobile App</div>
+      <h2 class="section-title">Track Your Visa Journey<br>Anywhere, Anytime</h2>
+      <p class="section-subtitle">Download the official SB Consultants mobile app — register your profile, track real-time milestone progress, view fee approvals, and chat with your assigned consultant.</p>
+      <div class="download-btns">
+        <a href="#download" class="store-btn" onclick="return storeSoon(event)" title="Google Play Store">
+          <div class="store-btn-icon">
+            <img src="assets/images/google.png" alt="Google Play" style="width:24px;height:24px;object-fit:contain;">
+          </div>
+          <div class="store-btn-text">
+            <div class="store-btn-sub">Get it on</div>
+            <div class="store-btn-name">Google Play</div>
+          </div>
+        </a>
+        <a href="#download" class="store-btn" onclick="return storeSoon(event)" title="Apple App Store">
+          <div class="store-btn-icon">
+            <img src="assets/images/apple.png" alt="Apple Store" style="width:24px;height:24px;object-fit:contain;">
+          </div>
+          <div class="store-btn-text">
+            <div class="store-btn-sub">Download on the</div>
+            <div class="store-btn-name">App Store</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-eyebrow">Get In Touch</div>
+      <h2 class="section-title">Contact SB Consultants</h2>
+      <div class="divider"></div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-label">Office Address</div>
+              <div class="contact-value">Paris Business Centre, Soan Garden, Islamabad</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="contact-label">Phone / WhatsApp</div>
+              <div class="contact-value"><a href="tel:+923155440606">0315-5440606</a></div>
+              <div class="contact-note">Mon–Sat, 1:00 PM – 10:00 PM</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value"><a href="mailto:sbconsultantofficial@gmail.com">sbconsultantofficial@gmail.com</a></div>
+            </div>
+          </div>
+          <a href="https://wa.me/923155440606" class="whatsapp-btn" target="_blank">
+            💬 Chat on WhatsApp
+          </a>
+        </div>
+        <div class="contact-form">
+          <h3>Send Us a Message</h3>
+          <form onsubmit="sendContactWhatsApp(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Full Name</label>
+                <input type="text" id="contactName" class="form-input" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Phone Number</label>
+                <input type="tel" id="contactPhone" class="form-input" placeholder="03XX-XXXXXXX" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Destination Country</label>
+              <input type="text" id="contactCountry" class="form-input" placeholder="e.g. Germany, UAE, Canada, UK">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea id="contactMsg" class="form-input" placeholder="Tell us about your visa requirement…" rows="3"></textarea>
+            </div>
+            <button type="submit" class="form-submit" style="display:flex;align-items:center;justify-content:center;gap:8px;">
+              <span>💬</span> Send Message on WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="nav-logo" href="#hero" style="margin-bottom:8px;display:inline-flex">
+            <img class="nav-logo-img" src="assets/images/logo.jpg" alt="SB Consultants">
+            <div class="nav-brand-group">
+              <span class="nav-logo-text" style="color:white">SB Consultants</span>
+              <span class="nav-logo-sub" style="color:rgba(255,255,255,.6)">Your Trusted Visa Partner</span>
+            </div>
+          </a>
+          <p>Professional visa consultancy based in Islamabad. We help Pakistani families and professionals secure legal work visas, study admissions, and residency worldwide.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="#services">Work Visas</a>
+          <a href="#services">Study Visas</a>
+          <a href="#services">Visit &amp; Tourist</a>
+          <a href="#services">Golden Visas</a>
+          <a href="#services">Sponsored Jobs</a>
+          <a href="#services">Scholarships</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#why-us">Why Us</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#contact">Contact Us</a>
+          <a href="#" onclick="showAffiliate(event)">Affiliate Program</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#" onclick="showPrivacy(event)">Privacy Policy</a>
+          <a href="#" onclick="showPolicy(event,'terms-conditions')">Terms &amp; Conditions</a>
+          <a href="#" onclick="showPolicy(event,'refund-policy')">Refund Policy</a>
+          <a href="#" onclick="showPolicy(event,'shipping-policy')">Shipping &amp; Delivery Policy</a>
+          <a href="#contact">Support</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 SB Consultants. All rights reserved. | <a href="#" onclick="showPrivacy(event)">Privacy Policy</a></p>
+        <div class="footer-badge">Verified Visa Consultancy</div>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- end #main-content -->
+
+<!-- PRIVACY POLICY PAGE -->
+<div id="privacy-policy">
+  <div class="policy-body">
+    <div class="policy-back">
+      <a href="#" onclick="showHome();return false;">← Back to Website</a>
+    </div>
+    <div class="policy-header">
+      <h1>Privacy Policy</h1>
+      <p>SB Consultant — Islamabad, Pakistan</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>1. Introduction</h2>
+      <p>SB Consultant ("we", "our", or "us") operates the SB Consultant mobile application and website (the "Service"). This Privacy Policy explains how we collect, use, store, and protect your personal information when you use our Service.</p>
+      <p>By using our Service, you agree to the collection and use of information as described in this policy. If you do not agree, please do not use our Service.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>2. Information We Collect</h2>
+      <p>We collect the following types of personal information to provide our visa consultancy services:</p>
+      <ul>
+        <li><strong>Account Information:</strong> Full name, email address, phone number, city of residence.</li>
+        <li><strong>Profile Information:</strong> Age, highest qualification, current job title, monthly salary, years of experience, destination country preference.</li>
+        <li><strong>Identity Documents:</strong> Passport scan/copy (uploaded securely for visa processing purposes).</li>
+        <li><strong>Professional Documents:</strong> CV/Resume (uploaded for profile review and matching).</li>
+        <li><strong>Payment Information:</strong> Proof of bank payment (screenshot or scan — we do not collect credit/debit card numbers).</li>
+        <li><strong>Support Communications:</strong> Messages and tickets submitted through the Help &amp; Support feature.</li>
+        <li><strong>Usage Data:</strong> App interaction data, device type, and access timestamps collected automatically.</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>3. How We Use Your Information</h2>
+      <p>We use the collected information solely for the following purposes:</p>
+      <ul>
+        <li>To provide visa consultancy services and process your application.</li>
+        <li>To verify your identity and assess your visa eligibility.</li>
+        <li>To match your profile with suitable visa categories and opportunities.</li>
+        <li>To communicate with you regarding your application status.</li>
+        <li>To process and verify your registration payment.</li>
+        <li>To respond to support tickets and queries.</li>
+        <li>To comply with applicable laws and regulations.</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>4. Data Storage & Security</h2>
+      <p>Your data is stored securely using industry-standard encryption at rest and in transit. We implement the following protective measures:</p>
+      <ul>
+        <li>All uploaded documents are stored in secure cloud systems with restricted role-based access rules.</li>
+        <li>Database and system access is protected by strict security protocols and access controls.</li>
+        <li>Authentication and account access are protected by secure encryption and verified sign-in methods.</li>
+        <li>We do not store payment card details or banking credentials of any kind.</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>5. Data Sharing</h2>
+      <p>We do not sell, rent, or trade your personal information. Your data may only be shared in the following limited circumstances:</p>
+      <ul>
+        <li><strong>With your consent:</strong> Only when you explicitly authorize us to share documents with embassies, educational institutions, or relevant immigration authorities for visa processing.</li>
+        <li><strong>Service Providers:</strong> Authorized cloud infrastructure and communication service providers bound by strict confidentiality and data protection obligations.</li>
+        <li><strong>Legal Requirements:</strong> If required by Pakistani law or court order.</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>6. Your Rights</h2>
+      <p>You have the following rights regarding your personal data:</p>
+      <ul>
+        <li><strong>Access:</strong> Request a copy of the personal data we hold about you.</li>
+        <li><strong>Correction:</strong> Request correction of inaccurate or incomplete data.</li>
+        <li><strong>Deletion:</strong> Request deletion of your account and associated data.</li>
+        <li><strong>Withdrawal:</strong> Withdraw consent for data processing at any time (this may affect your ability to use the Service).</li>
+      </ul>
+      <p>To exercise any of these rights, contact us at: <strong>sbconsultantofficial@gmail.com</strong> or WhatsApp: <strong>0315-5440606</strong>.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>7. Children's Privacy</h2>
+      <p>Our Service is not directed at children under the age of 18. We do not knowingly collect personal information from minors. If you believe a minor has provided us with personal data, please contact us immediately and we will delete it.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>8. Data Retention</h2>
+      <p>We retain your personal data for as long as your account is active or as needed to provide our services. Upon account deletion request, we will permanently delete your data within 30 days, except where retention is required by law.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>9. Third-Party Services &amp; Infrastructure</h2>
+      <p>Our service may utilize authorized third-party service providers who maintain strict confidentiality and data protection standards:</p>
+      <ul>
+        <li>Authorized identity and authentication service providers for secure account verification.</li>
+        <li>Official communication platforms (Email, WhatsApp) for real-time application updates and client support.</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>10. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will notify users of any significant changes via the app or email. Continued use of the Service after changes constitutes acceptance of the updated policy.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>11. Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
+      <ul>
+        <li><strong>Business Name:</strong> SB Consultant</li>
+        <li><strong>Address:</strong> Paris Business Centre, Soan Garden, Islamabad, Pakistan</li>
+        <li><strong>Email:</strong> sbconsultantofficial@gmail.com</li>
+        <li><strong>Phone / WhatsApp:</strong> 0315-5440606</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- REFUND POLICY PAGE -->
+<div id="refund-policy">
+  <div class="policy-body">
+    <div class="policy-back">
+      <a href="#" onclick="showHome();return false;">← Back to Website</a>
+    </div>
+    <div class="policy-header">
+      <h1>Refund Policy</h1>
+      <p>SB Consultant — Islamabad, Pakistan</p>
+    </div>
+    <div class="policy-note"><strong>In short:</strong> If an applicant withdraws their application within 24 hours of submission, the registration fee is 100% fully refunded.</div>
+
+    <div class="policy-section">
+      <h2>1. Overview</h2>
+      <p>SB Consultant offers a 100% money-back guarantee on its registration fee if the application is withdrawn within 24 hours of submission. This policy explains the terms and refund process.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>2. 100% Money-Back Guarantee (24 Hours)</h2>
+      <p>If you decide to withdraw your application within <strong>24 hours</strong> of submission and fee verification, you are entitled to a 100% full refund of the registration fee paid.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>3. Conditions for Eligibility</h2>
+      <ul>
+        <li>Your withdrawal request must be communicated within 24 hours of application submission.</li>
+        <li>You provide your registered full name, phone number, and payment transaction reference.</li>
+        <li>You submit your withdrawal request via WhatsApp at 0315-5440606 or email at sbconsultantofficial@gmail.com.</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>4. When a Refund Is Not Available</h2>
+      <ul>
+        <li>A suitable job offer matching your profile was provided and you chose not to proceed.</li>
+        <li>You supplied false, incomplete, or misleading information or documents.</li>
+        <li>You withdraw voluntarily after a job match has been presented.</li>
+        <li>Visa approval or rejection decisions made by an embassy or immigration authority — we do not control these decisions, and our guarantee relates to the job-matching service.</li>
+        <li>Fees paid to third parties (embassy fees, medical tests, courier, translation, etc.), which are non-refundable by us.</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>5. How to Request a Refund</h2>
+      <p>Contact us at <strong>sbconsultantofficial@gmail.com</strong> or via WhatsApp at <strong>0315-5440606</strong> with your full name, registered email, and payment proof/reference. You may also raise a ticket via the Help &amp; Support feature in the app.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>6. Refund Processing</h2>
+      <ul>
+        <li>Requests are reviewed within 3–5 working days.</li>
+        <li>Approved refunds are sent to the same bank account or mobile wallet used for payment, or another account you verify, within 7–10 working days of approval.</li>
+        <li>You will be notified by email or WhatsApp once the refund is processed.</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>7. Affiliate Promo Code Discounts</h2>
+      <p>If you paid a discounted fee using an affiliate promo code, the refund will be the amount you actually paid.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>8. Contact Us</h2>
+      <ul>
+        <li><strong>Business Name:</strong> SB Consultant</li>
+        <li><strong>Address:</strong> Paris Business Centre, Soan Garden, Islamabad, Pakistan</li>
+        <li><strong>Email:</strong> sbconsultantofficial@gmail.com</li>
+        <li><strong>Phone / WhatsApp:</strong> 0315-5440606 (Mon–Sat, 1:00 PM – 10:00 PM)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- SHIPPING &AMP; DELIVERY POLICY PAGE -->
+<div id="shipping-policy">
+  <div class="policy-body">
+    <div class="policy-back">
+      <a href="#" onclick="showHome();return false;">← Back to Website</a>
+    </div>
+    <div class="policy-header">
+      <h1>Shipping &amp; Delivery Policy</h1>
+      <p>SB Consultant — Islamabad, Pakistan</p>
+    </div>
+    <div class="policy-note">SB Consultant provides <strong>digital consultancy services</strong>. We do not sell or ship physical products.</div>
+
+    <div class="policy-section">
+      <h2>1. Overview</h2>
+      <p>All services of SB Consultant — profile review, job matching, visa guidance, and application support — are delivered digitally through our mobile app, website, email, phone, and WhatsApp. No physical goods are shipped.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>2. How Our Services Are Delivered</h2>
+      <ul>
+        <li><strong>Account activation:</strong> Your account and dashboard are activated after your registration payment is verified.</li>
+        <li><strong>Updates:</strong> Application status updates are shown in the app and sent via email or WhatsApp.</li>
+        <li><strong>Documents:</strong> Any documents we prepare or share with you (checklists, forms, guidance, offer-related paperwork) are delivered electronically in PDF or image format.</li>
+        <li><strong>Support:</strong> Provided by phone, WhatsApp, and in-app tickets, Monday to Saturday, 1:00 PM – 10:00 PM.</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>3. Delivery Timeline</h2>
+      <ul>
+        <li>Payment verification: usually within 24–48 working hours of submitting proof of payment.</li>
+        <li>Profile review: within 3–5 working days after verification and document submission.</li>
+        <li>Case preparation: profile review and consultant strategy call are initiated promptly within 24–48 hours of payment verification (see our Refund Policy).</li>
+        <li>Visa processing times depend on the embassy or immigration authority and are outside our control.</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>4. Delivery Charges</h2>
+      <p>There are no shipping or delivery charges, since all services are delivered digitally.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>5. Physical Documents &amp; Courier</h2>
+      <p>If original documents need to be sent to an embassy, employer, or visa center, we will let you know in advance. Courier costs for such documents are borne by the client unless agreed otherwise in writing. You may also visit our office at Paris Business Centre, Soan Garden, Islamabad by appointment.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>6. Delays</h2>
+      <p>Delays may occur due to incomplete documents, payment verification issues, public holidays, or third-party processing. We will keep you informed of any delay through the app, email, or WhatsApp.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>7. Contact Us</h2>
+      <ul>
+        <li><strong>Business Name:</strong> SB Consultant</li>
+        <li><strong>Address:</strong> Paris Business Centre, Soan Garden, Islamabad, Pakistan</li>
+        <li><strong>Email:</strong> sbconsultantofficial@gmail.com</li>
+        <li><strong>Phone / WhatsApp:</strong> 0315-5440606 (Mon–Sat, 1:00 PM – 10:00 PM)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- TERMS &AMP; CONDITIONS PAGE -->
+<div id="terms-conditions">
+  <div class="policy-body">
+    <div class="policy-back">
+      <a href="#" onclick="showHome();return false;">← Back to Website</a>
+    </div>
+    <div class="policy-header">
+      <h1>Terms &amp; Conditions</h1>
+      <p>SB Consultants — Islamabad, Pakistan</p>
+    </div>
+    <div class="policy-note">
+      <strong>Important Notice:</strong> These Terms &amp; Conditions govern the use of the SB Consultants website, mobile application, client consultancy services, and the <strong>Affiliate &amp; Influencer Partner Program</strong>. By accessing our services or joining as an affiliate partner, you agree to be bound by these Terms.
+    </div>
+
+    <div class="policy-section">
+      <h2>1. Overview &amp; Consultancy Scope</h2>
+      <p>SB Consultants is a premier overseas visa and international placement consultancy based at Paris Business Centre, Soan Garden, Islamabad, Pakistan. We provide professional profile evaluation, educational and employment credential verification, authentic employer matching, university admissions, and embassy lodgment assistance for destinations across Europe, the Middle East, the United Kingdom, Canada, and Asia-Pacific. All consultancy services are executed strictly in compliance with international immigration laws and recognized embassy standards.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>2. Eligibility &amp; Authenticity of Information</h2>
+      <ul>
+        <li><strong>Age Requirement:</strong> All clients and affiliate partners must be at least 18 years of age.</li>
+        <li><strong>Information Authenticity:</strong> Clients and affiliate partners must supply 100% genuine, verifiable personal, educational, and professional records. Falsification, altered passports, forged degrees, or fraudulent claims result in immediate disqualification and termination of services without refund.</li>
+        <li><strong>Account Confidentiality:</strong> Users and affiliate partners are responsible for safeguarding their login credentials and account security.</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>3. Independent Embassy Authority &amp; Outcome Disclaimer</h2>
+      <p>Final visa decisions, biometric enrollments, processing timelines, and visa issuance authority rest exclusively with the sovereign government embassies, consulates, or immigration authorities of the respective destination countries. SB Consultants does <strong>not</strong> have the authority to grant visas and does not guarantee visa issuance.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>4. Affiliate &amp; Influencer Partner Program Agreement</h2>
+      <p>SB Consultants operates a collaborative Affiliate &amp; Influencer Partner Program designed for digital creators, social media influencers, education counselors, and community leaders who wish to refer qualified clients to our consultancy.</p>
+
+      <h3 style="font-size:15.5px;font-weight:700;color:var(--primary);margin:16px 0 8px;">4.1 Partner Eligibility &amp; Application Review</h3>
+      <p>Any individual or organization with an active online community (Instagram, TikTok, YouTube, Facebook, WhatsApp channels, or website) may apply. Our management team reviews all applications within 24 to 48 hours before issuing official partner approval and unique promo codes.</p>
+
+      <h3 style="font-size:15.5px;font-weight:700;color:var(--primary);margin:16px 0 8px;">4.2 Flexible Profit Structure (Percentage-Based or Fixed Amount)</h3>
+      <p>Partner earnings can be structured according to campaign tiers and agreement:</p>
+      <ul>
+        <li><strong>Percentage-Based Commission:</strong> Earn an agreed percentage profit (e.g. 10% to 20%) on every completed consultancy service fee generated through your referral.</li>
+        <li><strong>Fixed-Amount Commission:</strong> Earn a guaranteed flat profit payout (e.g. 1,000 PKR to 5,000 PKR+ per verified registration/approved visa, based on destination category and referral volume).</li>
+      </ul>
+
+      <h3 style="font-size:15.5px;font-weight:700;color:var(--primary);margin:16px 0 8px;">4.3 The Equal Benefit Win-Win Rule (Same Profit = Same Discount)</h3>
+      <p>To ensure total transparency, ethical promotion, and maximum audience trust, SB Consultants enforces the <strong>Equal Benefit Rule</strong>:</p>
+      <div style="background:rgba(27,58,92,.06);border-left:4px solid var(--accent);padding:14px 18px;border-radius:var(--radius-sm);margin:12px 0;font-size:14px;color:var(--text-main);">
+        <strong>Equal Benefit Rule:</strong> The client/user who applies using an influencer's unique promo code receives the <strong>EXACT SAME DISCOUNT</strong> as the profit/commission earned by the influencer! For example, if an influencer earns a 15% (or fixed 1,500 PKR) commission on a referral, the referred client receives the matching 15% (or 1,500 PKR) discount off their registration fee. Both sides receive an identical, transparent financial benefit.
+      </div>
+
+      <h3 style="font-size:15.5px;font-weight:700;color:var(--primary);margin:16px 0 8px;">4.4 Real-Time Tracking &amp; Partner Dashboard</h3>
+      <p>Approved partners receive a dedicated promo code and instant access to a live affiliate portal. By logging in with their registered email, partners can view live metrics including total link clicks, client registrations, payment verification status, and cumulative commission balances in real time.</p>
+
+      <h3 style="font-size:15.5px;font-weight:700;color:var(--primary);margin:16px 0 8px;">4.5 Payouts &amp; Disbursement Schedule</h3>
+      <p>Affiliate commissions are disbursed transparently via Bank Wire, JazzCash, or EasyPaisa upon completion and verification of client lodgment. No hidden processing fees or clawbacks apply on legitimate verified referrals.</p>
+
+      <h3 style="font-size:15.5px;font-weight:700;color:var(--primary);margin:16px 0 8px;">4.6 Code of Conduct &amp; Prohibited Marketing Practices</h3>
+      <p>Affiliates represent our brand reputation and must adhere strictly to professional conduct:</p>
+      <ul>
+        <li>Partners must never make false promises, guarantee 100% visa approval, or impersonate embassy officials.</li>
+        <li>Spamming unsolicited messages, deceptive clickbait, or unauthorized alterations to official pricing is strictly prohibited.</li>
+        <li>Violation of these marketing ethics results in immediate revocation of partner status and forfeiture of unpaid commissions.</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>5. Fees, Pricing &amp; Promo Code Usage</h2>
+      <ul>
+        <li>The standard consultancy registration fee is communicated clearly in our app and website. When an authorized affiliate promo code is applied, the system automatically applies the corresponding discount.</li>
+        <li>Official payments must be transferred directly to our authorized business bank accounts or verified mobile gateways. SB Consultants never requests cash payments through unauthorized private accounts.</li>
+        <li>Third-party governmental costs (such as official embassy visa filing fees, medical tests, document attestation fees, and biometric fees) are independent and paid directly to the respective authorities.</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>6. Privacy &amp; Data Protection</h2>
+      <p>All client and partner information is strictly protected in accordance with our Privacy Policy. Personal records, contact numbers, and identification documents are handled securely with strict confidentiality protocols and industry-standard security safeguards, and are never sold, traded, or rented to third-party marketers.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>7. Intellectual Property</h2>
+      <p>All brand logos, website content, imagery, mobile app designs, and trademark materials are the exclusive property of SB Consultants. Affiliate partners are granted a limited, revocable license to utilize official brand assets solely for promoting authorized partner campaigns.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>8. Limitation of Liability</h2>
+      <p>To the fullest extent permitted by applicable Pakistani law, SB Consultants is not liable for indirect, incidental, or consequential damages resulting from sovereign visa decisions, foreign immigration policy amendments, or client misrepresentations. Our total liability is strictly capped at the fee amount actually paid by the client.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>9. Governing Law &amp; Jurisdiction</h2>
+      <p>These Terms &amp; Conditions are governed by and construed in accordance with the laws of the Islamic Republic of Pakistan. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the competent courts of Islamabad, Pakistan.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>10. Official Contact Information</h2>
+      <p>If you have any questions, wish to verify a partner promo code, or submit an official inquiry, contact our team:</p>
+      <ul>
+        <li><strong>Organization:</strong> SB Consultants — Your Trusted Visa Partner</li>
+        <li><strong>Office Address:</strong> Paris Business Centre, Soan Garden, Islamabad, Pakistan</li>
+        <li><strong>Official Email:</strong> sbconsultantofficial@gmail.com</li>
+        <li><strong>Direct WhatsApp / Helpline:</strong> 0315-5440606 (Monday to Saturday, 1:00 PM – 10:00 PM)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- AFFILIATE PROGRAM PAGE -->
+<div id="affiliate-program">
+  <div class="affiliate-body">
+    <div class="affiliate-back">
+      <a href="#" onclick="showHome();return false;">← Back to Website</a>
+    </div>
+    <div class="affiliate-header">
+      <h1>SB Consultants Affiliate &amp; Influencer Partner Program</h1>
+      <p>Partner with SB Consultants, share your unique promo code with your community, and earn flexible profit (percentage-based or fixed amount) on every verified client — with our <strong>Equal Benefit Rule</strong>: the exact same profit you earn is given as an instant discount to your follower!</p>
+    </div>
+
+    <!-- STEP 1: TERMS & CONDITIONS -->
+    <div class="affiliate-step active" id="affiliate-step-terms">
+      <div class="affiliate-card">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:12px;">
+          <h3 style="margin-bottom:0;">Step 1 — Read &amp; Accept Affiliate Program Terms</h3>
+          <span style="font-size:11.5px;font-weight:700;color:var(--primary);background:var(--primary-container);padding:5px 14px;border-radius:50px;">Affiliate &amp; Influencer Partner Agreement</span>
+        </div>
+        <p style="font-size:13.5px;color:var(--text-muted);margin-bottom:18px;line-height:1.6;">
+          Please review our general consultancy terms, profit structures, and the mutual win-win benefit rules below before proceeding to partner registration.
+        </p>
+
+        <!-- 3 Highlight Pillars -->
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(210px, 1fr));gap:14px;margin-bottom:20px;">
+          <!-- Pillar 1: General Terms -->
+          <div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px;border-top:3.5px solid var(--primary);">
+            <div style="font-size:20px;margin-bottom:6px;">⚖️</div>
+            <div style="font-size:13.5px;font-weight:700;color:var(--primary);margin-bottom:4px;">1. General Terms</div>
+            <div style="font-size:12px;color:var(--text-muted);line-height:1.55;">Legal consultancy scope, genuine document verification, professional profile evaluation, and embassy authority disclaimers.</div>
+          </div>
+          <!-- Pillar 2: Profit Model -->
+          <div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px;border-top:3.5px solid var(--accent);">
+            <div style="font-size:20px;margin-bottom:6px;">💰</div>
+            <div style="font-size:13.5px;font-weight:700;color:var(--primary);margin-bottom:4px;">2. Percent or Fixed Profit</div>
+            <div style="font-size:12px;color:var(--text-muted);line-height:1.55;">Earn commission on a <strong>Percentage Basis</strong> (e.g. 10%–20%) or a <strong>Fixed Amount Basis</strong> (e.g. 1,000–5,000 PKR) per verified applicant.</div>
+          </div>
+          <!-- Pillar 3: Equal Benefit Rule -->
+          <div style="background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px;border-top:3.5px solid var(--success);">
+            <div style="font-size:20px;margin-bottom:6px;">🤝</div>
+            <div style="font-size:13.5px;font-weight:700;color:var(--primary);margin-bottom:4px;">3. Equal Benefit Win-Win</div>
+            <div style="font-size:12px;color:var(--text-muted);line-height:1.55;">The user who uses your code gets the <strong>exact same discount</strong> as the profit/commission you earn! Completely transparent &amp; mutual.</div>
+          </div>
+        </div>
+
+        <div class="terms-box" style="max-height:440px;">
+          <ol>
+            <li style="margin-bottom:12px;">
+              <strong>General Scope &amp; Legal Framework:</strong>
+              SB Consultants is a registered overseas visa and international placement consultancy based at Paris Business Centre, Soan Garden, Islamabad, Pakistan. We provide professional profile evaluation, educational/work credential verification, verified overseas employer matching, and embassy file preparation. All operations are conducted strictly under authentic immigration laws and official embassy guidelines.
+            </li>
+            <li style="margin-bottom:12px;">
+              <strong>Independent Embassy Decision Authority:</strong>
+              Final visa decisions, biometric verifications, processing times, and visa grant authority rest exclusively with the sovereign government embassies, consulates, or immigration departments. SB Consultants provides expert preparation and employer matching to maximize approval probability, but does not issue or guarantee visas.
+            </li>
+            <li style="margin-bottom:12px;">
+              <strong>Information Authenticity &amp; Document Integrity:</strong>
+              Both applicants and affiliate partners are strictly required to provide authentic, verifiable documents (passport, CV, academic certificates). Falsification or forged records will lead to immediate cancellation of services and termination of partner status without refund.
+            </li>
+            <li style="margin-bottom:12px;">
+              <strong>Flexible Profit Structure (Percentage-Based or Fixed-Amount):</strong>
+              Affiliate partners and influencers can choose or qualify for flexible earnings models:
+              <ul style="margin:6px 0 6px 18px;list-style-type:circle;">
+                <li><strong>Percentage-Based Profit:</strong> Earn an agreed percentage (e.g. 10% to 20%) on every completed service fee generated through your unique promo code.</li>
+                <li><strong>Fixed-Amount Profit:</strong> Earn a guaranteed flat commission payout (e.g. 1,000 PKR to 5,000 PKR+ per verified registration/approved visa, based on destination category and referral volume).</li>
+              </ul>
+            </li>
+            <li style="margin-bottom:12px;">
+              <strong>Equal Benefit Win-Win Rule (Same Profit = Same Discount):</strong>
+              To ensure 100% fairness and high conversion among your audience, <strong>the applicant/user who uses your promo code receives the EXACT SAME DISCOUNT as the profit/commission you earn!</strong> For example, if you earn a 15% (or fixed 1,500 PKR) commission on a referral, the client also receives the matching 15% (or 1,500 PKR) discount off their registration fee. Both sides benefit equally from every referral.
+            </li>
+            <li style="margin-bottom:12px;">
+              <strong>Transparent Real-Time Partner Dashboard:</strong>
+              Once approved, you receive an exclusive trackable promo code and access to your live affiliate portal. By logging in with your registered email, you can view referral clicks, client registrations, payment verification status, and cumulative commission balances in real time.
+            </li>
+            <li style="margin-bottom:12px;">
+              <strong>Ethical Marketing &amp; Code of Conduct:</strong>
+              Affiliates must promote SB Consultants truthfully and ethically. Promising guaranteed visa approvals, spamming social media groups, using misleading clickbait, or unauthorized fee alterations is strictly prohibited and results in immediate forfeiture of unpaid commissions and account termination.
+            </li>
+            <li style="margin-bottom:12px;">
+              <strong>Payouts &amp; Disbursement Schedule:</strong>
+              Commissions are calculated transparently and disbursed promptly to your nominated Bank Account, JazzCash, or EasyPaisa account upon verification of client payment and file lodgment.
+            </li>
+            <li style="margin-bottom:6px;">
+              <strong>Official Contact &amp; Support:</strong>
+              For affiliate queries, promo code adjustments, or partnership inquiries, contact our management team directly at <strong>sbconsultantofficial@gmail.com</strong> or via WhatsApp at <strong>0315-5440606</strong> (Monday to Saturday, 1:00 PM – 10:00 PM).
+            </li>
+          </ol>
+        </div>
+
+        <div class="terms-checkbox-row">
+          <input type="checkbox" id="agreeTerms" onchange="document.getElementById('continueToSignup').disabled = !this.checked;">
+          <label for="agreeTerms">I have read, understood, and accept the General Terms, the Profit Model (Percentage or Fixed Amount), and the Equal Benefit Rule (Same Profit for Influencer = Same Discount for User).</label>
+        </div>
+
+        <button class="form-submit" style="margin-top:18px;max-width:260px;" id="continueToSignup" disabled onclick="goToAffiliateStep('signup')">Continue to Sign Up</button>
+      </div>
+    </div>
+
+    <!-- STEP 2: SIGN UP FORM -->
+    <div class="affiliate-step" id="affiliate-step-signup">
+      <div class="affiliate-card">
+        <h3>Step 2 — Register as an Affiliate</h3>
+        <span class="affiliate-fee-note">🤝 Equal Benefit Win-Win: Your followers receive the exact same discount as the profit you earn! Available as percentage-based or fixed-amount commission.</span>
+        <div class="form-row" style="margin-top:18px">
+          <div class="form-group">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-input" id="affName" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-input" id="affEmail" placeholder="you@example.com">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Contact Number</label>
+            <input type="tel" class="form-input" id="affPhone" placeholder="03XX-XXXXXXX">
+          </div>
+          <div class="form-group">
+            <label class="form-label">City</label>
+            <input type="text" class="form-input" id="affCity" placeholder="e.g. Islamabad">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Which platforms do you use?</label>
+          <div class="platform-grid" id="platformGrid">
+            <label class="platform-chip"><input type="checkbox" value="Instagram" onchange="renderPlatformLinks()"> Instagram</label>
+            <label class="platform-chip"><input type="checkbox" value="Facebook" onchange="renderPlatformLinks()"> Facebook</label>
+            <label class="platform-chip"><input type="checkbox" value="TikTok" onchange="renderPlatformLinks()"> TikTok</label>
+            <label class="platform-chip"><input type="checkbox" value="YouTube" onchange="renderPlatformLinks()"> YouTube</label>
+            <label class="platform-chip"><input type="checkbox" value="WhatsApp Channel" onchange="renderPlatformLinks()"> WhatsApp Channel</label>
+            <label class="platform-chip"><input type="checkbox" value="Other" onchange="renderPlatformLinks()"> Other</label>
+          </div>
+          <div class="platform-link-fields" id="platformLinkFields"></div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Total Followers (across all your platforms)</label>
+          <input type="number" min="0" class="form-input" id="affFollowers" placeholder="e.g. 15000">
+        </div>
+
+        <button class="form-submit" onclick="submitAffiliateApplication()">Submit Application</button>
+        <div class="affiliate-submit-msg" id="signupMsg"></div>
+      </div>
+    </div>
+
+    <!-- STEP 3: SUBMITTED CONFIRMATION -->
+    <div class="affiliate-step" id="affiliate-step-submitted">
+      <div class="affiliate-card">
+        <h3>Application Submitted ✅</h3>
+        <p style="font-size:14px;color:var(--text-muted);line-height:1.7;">Thank you! Our team will review your profile and social media presence. Once approved, you'll receive your unique promo code by email/WhatsApp. You can check your status anytime below.</p>
+        <button class="form-submit" style="margin-top:16px;max-width:260px;" onclick="goToAffiliateStep('dashboard')">Check My Status →</button>
+      </div>
+    </div>
+
+    <!-- DASHBOARD: STATUS CHECK -->
+    <div class="affiliate-card" id="affiliate-dashboard-card" style="margin-top: 8px;">
+      <h3>Affiliate Dashboard — Check Your Status</h3>
+      <div class="form-row">
+        <div class="form-group" style="grid-column: 1 / -1;">
+          <label class="form-label">Enter your registered email</label>
+          <input type="email" class="form-input" id="dashboardEmail" placeholder="you@example.com">
+        </div>
+      </div>
+      <button class="form-submit" style="max-width:220px;" onclick="checkAffiliateStatus()">Check Status</button>
+      <div id="dashboardResult" style="margin-top:18px;"></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Supabase REST API Config (SB Consultants) -->
+<script>
+  const SUPABASE_URL = "https://tpmdqfmtunxbnhpckkbh.supabase.co";
+  const SUPABASE_ANON_KEY = "sb_publishable_5n7vzIcQ-hXaBq0s3XliCw_J066pNPo";
+  const SUPABASE_HEADERS = {
+    "apikey": SUPABASE_ANON_KEY,
+    "Authorization": "Bearer " + SUPABASE_ANON_KEY,
+    "Content-Type": "application/json"
+  };
+</script>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+  const PAGE_IDS = ['privacy-policy','refund-policy','shipping-policy','terms-conditions','affiliate-program'];
+  function showPage(id) {
+    document.getElementById('main-content').classList.add('hidden');
+    PAGE_IDS.forEach(p => document.getElementById(p).classList.toggle('active', p === id));
+    window.scrollTo(0,0);
+    document.getElementById('mobileMenu').classList.remove('open');
+  }
+  function showPolicy(e, id) { if (e) e.preventDefault(); showPage(id); }
+  function showPrivacy(e) { if (e) e.preventDefault(); showPage('privacy-policy'); }
+  function showHome() {
+    document.getElementById('main-content').classList.remove('hidden');
+    PAGE_IDS.forEach(p => document.getElementById(p).classList.remove('active'));
+  }
+  function showAffiliate(e) { if (e) e.preventDefault(); showPage('affiliate-program'); }
+
+  // ── AFFILIATE PROGRAM LOGIC ──
+  function goToAffiliateStep(step) {
+    document.querySelectorAll('.affiliate-step').forEach(el => el.classList.remove('active'));
+    if (step === 'signup') {
+      document.getElementById('affiliate-step-signup').classList.add('active');
+    } else if (step === 'submitted') {
+      document.getElementById('affiliate-step-submitted').classList.add('active');
+    } else if (step === 'dashboard') {
+      document.getElementById('affiliate-step-terms').classList.remove('active');
+      document.getElementById('affiliate-dashboard-card').scrollIntoView({behavior:'smooth'});
+    }
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+
+  function renderPlatformLinks() {
+    const checked = Array.from(document.querySelectorAll('#platformGrid input[type="checkbox"]:checked')).map(c => c.value);
+    const container = document.getElementById('platformLinkFields');
+    container.innerHTML = '';
+    checked.forEach(platform => {
+      const group = document.createElement('div');
+      group.className = 'form-group';
+      group.innerHTML = `
+        <label class="form-label">${platform} Profile Link</label>
+        <input type="url" class="form-input platform-link-input" data-platform="${platform}" placeholder="https://...">
+      `;
+      container.appendChild(group);
+    });
+  }
+
+  function generatePromoCode(name) {
+    const base = (name || 'SB').replace(/[^a-zA-Z]/g, '').toUpperCase().slice(0, 4) || 'SBAF';
+    const rand = Math.floor(1000 + Math.random() * 9000);
+    return `${base}${rand}`;
+  }
+
+  async function submitAffiliateApplication() {
+    const msgEl = document.getElementById('signupMsg');
+    const name = document.getElementById('affName').value.trim();
+    const email = document.getElementById('affEmail').value.trim().toLowerCase();
+    const phone = document.getElementById('affPhone').value.trim();
+    const city = document.getElementById('affCity').value.trim();
+    const followers = document.getElementById('affFollowers').value;
+    const platforms = Array.from(document.querySelectorAll('#platformGrid input[type="checkbox"]:checked')).map(c => c.value);
+    const profileLinks = {};
+    document.querySelectorAll('.platform-link-input').forEach(inp => {
+      profileLinks[inp.dataset.platform] = inp.value.trim();
+    });
+
+    if (!name || !email || !phone || !city || !followers || platforms.length === 0) {
+      msgEl.textContent = 'Please fill in all fields, select at least one platform, and add your profile links.';
+      msgEl.className = 'affiliate-submit-msg error';
+      return;
+    }
+
+    msgEl.textContent = 'Submitting your application…';
+    msgEl.className = 'affiliate-submit-msg info';
+
+    try {
+      // 1. Check if application already exists with this email
+      const checkRes = await fetch(`${SUPABASE_URL}/rest/v1/affiliates?email=eq.${encodeURIComponent(email)}&select=id,status`, {
+        headers: SUPABASE_HEADERS
+      });
+      const existing = await checkRes.json();
+      if (existing && existing.length > 0) {
+        msgEl.innerHTML = `You have already registered an application with <strong>${email}</strong> (Status: <em>${existing[0].status}</em>). Check your status in the dashboard below.`;
+        msgEl.className = 'affiliate-submit-msg info';
+        document.getElementById('dashboardEmail').value = email;
+        document.getElementById('affiliate-dashboard-card').scrollIntoView({ behavior: 'smooth' });
+        return;
+      }
+
+      // 2. Insert new affiliate record into Supabase
+      const postRes = await fetch(`${SUPABASE_URL}/rest/v1/affiliates`, {
+        method: 'POST',
+        headers: {
+          ...SUPABASE_HEADERS,
+          'Prefer': 'return=representation'
+        },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          phone: phone,
+          city: city,
+          total_followers: parseInt(followers, 10) || 0,
+          platforms: platforms,
+          profile_links: profileLinks,
+          status: 'pending',
+          commission_per_referral: 1000
+        })
+      });
+
+      if (!postRes.ok) {
+        const errJson = await postRes.json().catch(() => ({}));
+        throw new Error(errJson.message || 'Server returned status ' + postRes.status);
+      }
+
+      msgEl.textContent = '';
+      document.getElementById('dashboardEmail').value = email;
+      goToAffiliateStep('submitted');
+    } catch (err) {
+      console.error('Affiliate submission error:', err);
+      msgEl.textContent = 'Something went wrong submitting your application. Please try again or contact us on WhatsApp: 0315-5440606.';
+      msgEl.className = 'affiliate-submit-msg error';
+    }
+  }
+
+  async function checkAffiliateStatus() {
+    const email = document.getElementById('dashboardEmail').value.trim().toLowerCase();
+    const resultEl = document.getElementById('dashboardResult');
+    if (!email) {
+      resultEl.innerHTML = '<div class="affiliate-submit-msg error">Please enter the email you registered with.</div>';
+      return;
+    }
+    resultEl.innerHTML = '<div class="affiliate-submit-msg info">Checking your status…</div>';
+
+    try {
+      // 1. Fetch affiliate record by email
+      const affRes = await fetch(`${SUPABASE_URL}/rest/v1/affiliates?email=eq.${encodeURIComponent(email)}&select=*`, {
+        headers: SUPABASE_HEADERS
+      });
+      if (!affRes.ok) throw new Error('Query error (' + affRes.status + ')');
+      const affiliates = await affRes.json();
+
+      if (!affiliates || affiliates.length === 0) {
+        resultEl.innerHTML = '<div class="affiliate-submit-msg error">No application found for <strong>' + email + '</strong>. Please double-check your email or apply above.</div>';
+        return;
+      }
+
+      const aff = affiliates[0];
+      const status = (aff.status || 'pending').toLowerCase();
+      const statusLabel = status === 'approved' ? 'Approved ✅' : (status === 'rejected' ? 'Application Rejected' : 'Pending Review ⏳');
+      const statusClass = status === 'approved' ? 'approved' : (status === 'rejected' ? 'rejected' : 'pending');
+
+      let html = `
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:12px;">
+          <span class="status-badge ${statusClass}">${statusLabel}</span>
+          <span style="font-size:12.5px;color:var(--text-muted)">Partner: <strong>${aff.name}</strong></span>
+        </div>`;
+
+      if (status === 'approved') {
+        const promoCode = (aff.promo_code || '').trim().toUpperCase();
+
+        // 2. Fetch live referral metrics & transaction records from Supabase
+        let referralCount = 0;
+        let paymentList = [];
+        if (promoCode) {
+          try {
+            // Attempt A: Call secure RPC function
+            const rpcRes = await fetch(`${SUPABASE_URL}/rest/v1/rpc/get_affiliate_referral_stats`, {
+              method: 'POST',
+              headers: SUPABASE_HEADERS,
+              body: JSON.stringify({ p_promo_code: promoCode })
+            });
+            if (rpcRes.ok) {
+              const rpcData = await rpcRes.json();
+              if (rpcData) {
+                referralCount = parseInt(rpcData.referral_count, 10) || 0;
+                paymentList = Array.isArray(rpcData.payments) ? rpcData.payments : [];
+              }
+            } else {
+              // Attempt B: Direct REST query with case-insensitive ilike
+              const payRes = await fetch(`${SUPABASE_URL}/rest/v1/payments?promo_code=ilike.${encodeURIComponent(promoCode)}&select=id,reference_id,transaction_id,amount,status,payment_method,created_at&order=created_at.desc`, {
+                headers: {
+                  ...SUPABASE_HEADERS,
+                  'Prefer': 'count=exact'
+                }
+              });
+              const contentRange = payRes.headers.get('Content-Range');
+              if (contentRange) {
+                const parts = contentRange.split('/');
+                if (parts.length > 1 && !isNaN(parts[1])) {
+                  referralCount = parseInt(parts[1], 10);
+                }
+              }
+              const payData = await payRes.json();
+              if (Array.isArray(payData)) {
+                paymentList = payData;
+                if (!referralCount) referralCount = payData.length;
+              }
+            }
+          } catch (e) {
+            console.warn('Could not fetch referral payments:', e);
+          }
+        }
+
+        // 3. Fetch discount offer from promo_codes table
+        let discountBadge = '';
+        if (promoCode) {
+          try {
+            const promoRes = await fetch(`${SUPABASE_URL}/rest/v1/promo_codes?code=eq.${encodeURIComponent(promoCode)}&select=*`, {
+              headers: SUPABASE_HEADERS
+            });
+            const promoData = await promoRes.json();
+            if (promoData && promoData.length > 0) {
+              const p = promoData[0];
+              const discText = p.discount_type === 'percentage' 
+                ? `${p.discount_value}% OFF` 
+                : `PKR ${Number(p.discount_value).toLocaleString()} OFF`;
+              discountBadge = `<span style="display:inline-block;background:#EBF5FF;color:#1B3A5C;font-size:12px;font-weight:700;padding:5px 12px;border-radius:6px;border:1px solid #BFDBFE;">Your Audience Gets: ${discText} on all visa services</span>`;
+            }
+          } catch (e) {
+            console.warn('Could not fetch promo details:', e);
+          }
+        }
+
+        const commRate = parseFloat(aff.commission_per_referral) || 1000;
+        const totalEarnings = referralCount * commRate;
+
+        // 4. Generate transaction breakdown table
+        let paymentsTableHtml = '';
+        if (paymentList && paymentList.length > 0) {
+          const rowsHtml = paymentList.map((p, idx) => {
+            const dateStr = p.created_at ? new Date(p.created_at).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }) : 'Recent';
+            const ref = p.reference_id || p.transaction_id || `SB-REF-${idx+1}`;
+            const amt = Number(p.amount || 0).toLocaleString();
+            const earned = commRate.toLocaleString();
+            const statusBadge = (p.status || 'completed').toLowerCase() === 'completed'
+              ? '<span style="background:#DEF7EC;color:#03543F;padding:3px 8px;border-radius:12px;font-size:11px;font-weight:700;">Verified Paid</span>'
+              : '<span style="background:#FEF3C7;color:#92400E;padding:3px 8px;border-radius:12px;font-size:11px;font-weight:700;">Processing</span>';
+            return `
+              <tr style="border-bottom:1px solid var(--border);">
+                <td style="padding:10px 8px;font-weight:600;color:var(--text-dark);">${ref}</td>
+                <td style="padding:10px 8px;color:var(--text-muted);">${dateStr}</td>
+                <td style="padding:10px 8px;color:var(--text-dark);font-weight:600;">PKR ${amt}</td>
+                <td style="padding:10px 8px;color:#059669;font-weight:700;">+PKR ${earned}</td>
+                <td style="padding:10px 8px;">${statusBadge}</td>
+              </tr>`;
+          }).join('');
+
+          paymentsTableHtml = `
+            <div style="margin-top:20px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm);padding:16px;">
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:8px;">
+                <h4 style="font-size:14px;font-weight:800;color:var(--text-dark);margin:0;">📋 Referred Client Transactions (${paymentList.length})</h4>
+                <span style="font-size:11.5px;color:var(--text-muted);">Real-time Verified Ledger</span>
+              </div>
+              <div style="overflow-x:auto;">
+                <table style="width:100%;font-size:12px;border-collapse:collapse;text-align:left;min-width:480px;">
+                  <thead>
+                    <tr style="border-bottom:2px solid var(--border);color:var(--text-muted);font-size:11px;text-transform:uppercase;">
+                      <th style="padding:8px;">Booking / Reference</th>
+                      <th style="padding:8px;">Date</th>
+                      <th style="padding:8px;">Client Payment</th>
+                      <th style="padding:8px;">Your Commission</th>
+                      <th style="padding:8px;">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${rowsHtml}
+                  </tbody>
+                </table>
+              </div>
+            </div>`;
+        }
+
+        if (promoCode) {
+          html += `
+            <div class="promo-code-display" title="Click to copy promo code" onclick="navigator.clipboard.writeText('${promoCode}');alert('Promo code ${promoCode} copied to clipboard!');" style="cursor:pointer;">
+              <div>${promoCode}</div>
+              <div style="font-size:11px;font-weight:500;color:var(--text-muted);margin-top:4px;">📋 Click to Copy Promo Code</div>
+            </div>
+            ${discountBadge ? '<div style="text-align:center;margin-bottom:14px;">' + discountBadge + '</div>' : ''}
+            <div class="referral-stat">
+              <div class="referral-stat-box">
+                <div class="referral-stat-num">${referralCount}</div>
+                <div class="referral-stat-label">Clients Referred</div>
+              </div>
+              <div class="referral-stat-box">
+                <div class="referral-stat-num">${commRate.toLocaleString()} PKR</div>
+                <div class="referral-stat-label">Per Referral</div>
+              </div>
+              <div class="referral-stat-box">
+                <div class="referral-stat-num" style="color:#059669;">${totalEarnings.toLocaleString()} PKR</div>
+                <div class="referral-stat-label">Total Earned</div>
+              </div>
+            </div>
+            ${paymentsTableHtml}
+            <p style="font-size:12.5px;color:var(--text-muted);margin-top:16px;line-height:1.6;background:var(--card);padding:12px 16px;border-radius:var(--radius-sm);border-left:3px solid #059669;">
+              💡 <strong>How it works:</strong> Share your code <strong>${promoCode}</strong> with your audience. When they book a visa consultation or application in the SB Consultants mobile app, they get an instant discount and you automatically earn PKR ${commRate.toLocaleString()}. Payouts are transferred weekly via JazzCash, EasyPaisa, or 1Link IBFT.
+            </p>
+          `;
+        } else {
+          html += `<p style="font-size:13.5px;color:var(--text-muted);margin-top:10px;">Your application has been approved! Our team is assigning your promotional code. Please check back shortly or WhatsApp us at 0315-5440606.</p>`;
+        }
+      } else if (status === 'pending') {
+        html += `<p style="font-size:13.5px;color:var(--text-muted);margin-top:10px;line-height:1.6;">
+          Your profile is currently under review by the SB Consultants management team. Once approved, your exclusive discount promo code and real-time client referral tracker will appear right here. For immediate activation, contact us on WhatsApp at <strong>0315-5440606</strong>.
+        </p>`;
+      } else if (status === 'rejected') {
+        html += `<p style="font-size:13.5px;color:#DC2626;margin-top:10px;line-height:1.6;">
+          Thank you for your application. We are unable to approve your affiliate partnership at this time. If you have questions or your reach has expanded, contact us at <strong>0315-5440606</strong>.
+        </p>`;
+      }
+
+      resultEl.innerHTML = html;
+    } catch (err) {
+      console.error('Check status error:', err);
+      resultEl.innerHTML = '<div class="affiliate-submit-msg error">Something went wrong checking your status. Please try again or contact us on WhatsApp: 0315-5440606.</div>';
+    }
+  }
+
+  // Store buttons (apps not published yet)
+  function storeSoon(e) {
+    if (e) e.preventDefault();
+    alert('Our mobile app is coming soon to Google Play and the App Store. For now, please contact us on WhatsApp: 0315-5440606.');
+    return false;
+  }
+
+  // Smooth scroll for in-page anchor links (safe for href="#")
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (!href || href.length < 2 || this.getAttribute('onclick')) return;
+      let target = null;
+      try { target = document.querySelector(href); } catch (err) { return; }
+      if (target) { e.preventDefault(); target.scrollIntoView({behavior:'smooth'}); }
+    });
+  });
+
+  // Contact Form to WhatsApp
+  function sendContactWhatsApp(e) {
+    if (e) e.preventDefault();
+    const name = document.getElementById('contactName') ? document.getElementById('contactName').value.trim() : '';
+    const phone = document.getElementById('contactPhone') ? document.getElementById('contactPhone').value.trim() : '';
+    const country = document.getElementById('contactCountry') ? document.getElementById('contactCountry').value.trim() : '';
+    const msg = document.getElementById('contactMsg') ? document.getElementById('contactMsg').value.trim() : '';
+
+    let text = 'Hello SB Consultants,\n\nI would like to inquire about your visa consultancy services.';
+    if (name) text += '\n*Name:* ' + name;
+    if (phone) text += '\n*Phone:* ' + phone;
+    if (country) text += '\n*Destination:* ' + country;
+    if (msg) text += '\n*Message:* ' + msg;
+
+    const waUrl = 'https://wa.me/923155440606?text=' + encodeURIComponent(text);
+    window.open(waUrl, '_blank');
+  }
+
+</script>
+</body>
+</html>
